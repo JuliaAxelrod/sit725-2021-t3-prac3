@@ -1,151 +1,36 @@
-Hello by Alessio:
+Readme BY Julia Axelrod, replacing Readme by Dr. Alessio Bonti
 
-This is my boilerplate for creating simple new applications. 
-This boilerplate is very basic and should be used as a training ground
+What I did in this assignment:
 
-It comprises of 
-Jquery for advanced manipulations
-Materialize for the UI interface
-Socket IO for real time comunications
+Used boilerplate code and styles.css provided by Dr. Alessio Bonti to begin the project
+Changed visual representation of index.html
+Added my images from Antarctica
+Chaged code:
 
+in Server.js I changed port for internal reasons
 
-After installing, run the server using
+- added global variable for future login
+- added setTimeout to produce socket.id in socket.emit
+- changed /test to output different message depending on user accessing it before or after setTimeout
 
-    npm start
+In env.js I added
 
+- append all projects to project list
+- function to output allprojects on cards - for HTML
+- added jQuery for sidenav intitialisation.
 
+In future, I will add jQuery to initialise datePicker in this file
 
-If instead, you get something like the following, someone is already
-using the default port of 8080:
+Index.html was modified visually to suit presentation of Antarctica views, but reference to Dr. Alessio Bonti was kept.
 
-    Server running at http://127.0.0.1:8080/
+- datePicker was added to link to future projects for logging of expedition events
+- menu was added with link to my homepage "Antarctica"
+- div for project list was added
+- datePicker was initialised using <script></script>, but in future will be moved to env.js to be initalised in jQuery
 
-    events.js:72
-        throw er; // Unhandled 'error' event
-                  ^
-    Error: listen EADDRINUSE
-        at errnoException (net.js:901:11)
-        at Server._listen2 (net.js:1039:14)
-        at listen (net.js:1061:10)
-        at Server.listen (net.js:1127:5)
-        ...
+In styles .test-div div style was added for presentation of 20 projects in table
 
-Once the server is running, test it by visiting the following URL in your
-browser:
+- Upload to gitHub was very chaotic, as I was unsure how to add a folder, I may need to re-do the upload.
 
-    http://localhost:8080/
-
-Next, test it by visiting the following URL in your
-browser:
-
-    http://localhost:8080/hello
-
-When you visit the above url the content will be Hello World
-
-    Hello World
-
-
-
-
-files in this repository
---------------------------------------------------------------------------------
-
-`server.js`
-
-The server written with node.js.  This server was adapted from the
-*[example provided in the node docs](http://nodejs.org/api/synopsis.html)*.
-
-The difference is that the port, binding host, and url are determined
-via the [`cfenv` package](https://www.npmjs.org/package/cfenv).  This will
-return appropriate values both when running in Cloud Foundry and when running
-locally.
-
----
-
-`.cfignore`
-
-List of file patterns that should **NOT** be uploaded to Bluemix.
-
-See the Cloud Foundry doc
-*[Prepare to Deploy an Application](http://docs.cloudfoundry.org/devguide/deploy-apps/prepare-to-deploy.html)*
-for more information.
-
-In this case, the contents of the file are:
-
-    node_modules
-
-This indicates the node modules you installed with `npm install` will **NOT** be
-uploaded to Bluemix.  When your app is "staged" (ie, built on Bluemix during
-`cf push`), an
-`npm install` will be run there to install the required modules.  By avoiding
-sending your node modules when you push your app, your app will be uploaded
-quicker than
-if you **HAD** sent the modules.  But you can send the modules you have installed
-if you like; just delete the `.cfignore` file.
-
----
-
-`.gitignore`
-
-List of file patterns that should **NOT** be stored in git.  If you aren't using
-git, you don't need this file.  And the contents are personal preference.
-
-See the npm google groups topic
-*['node_modules in git' from FAQ](https://groups.google.com/forum/#!topic/npm-/8SRXhD6uMmk)*
-for discussion.
-
----
-
-`LICENSE`
-
-The open source license for this sample; in this case, it's licensed under
-[Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
-
----
-
-`manifest.yml`
-
-This file contains information that's used when you `cf push` the application.
-
-See the Cloud Foundry doc
-*[Deploying with Application Manifests](http://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html)*
-for more information.
-
----
-
-`package.json`
-
-Standard package.json file for node packages.  You will need this file for two
-reasons:
-
-* identify your node package dependencies during `npm install`
-* identify to Bluemix that this directory contains a node.js application
-
-See the npm doc
-*[package.json](https://npmjs.org/doc/json.html)*
-for more information.
-
----
-
-`Procfile`
-
-Used to indicate the command to start the server.
-
-See the Cloud Foundry doc
-*[Tips for Node.js Applications](http://docs.cloudfoundry.org/buildpacks/node/node-tips.html)*
-and the Heroku doc
-*[Process Types and the Procfile](https://devcenter.heroku.com/articles/procfile)*
-for more information.
-
-In this case, the file has a single line:
-
-    web: node server
-
-This indicates that the command `node server` should be run when the app is
-started.
-
----
-
-`README.md`
-
-This file!
+Kind Regards,
+Julia
