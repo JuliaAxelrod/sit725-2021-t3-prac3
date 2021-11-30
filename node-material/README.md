@@ -1,8 +1,15 @@
+# sit725-2021-t3-prac3
+
 Readme BY Julia Axelrod, replacing Readme by Dr. Alessio Bonti
 
 What I did in this assignment:
 
 Used boilerplate code and styles.css provided by Dr. Alessio Bonti to begin the project
+
+Project is located in node-material folder and includes
+server.js and public folder, containing env.js, index.html and styles.css as well as folder assets with images, wireframe design document and homepage HTML.
+
+What I changed and implemented:
 Changed visual representation of index.html
 Added my images from Antarctica
 Chaged code:
