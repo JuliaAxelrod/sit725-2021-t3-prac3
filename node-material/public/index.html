@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Julia's Antarctic Expedition Calendar</title>
+
+    <!-- Compiled and minified CSS -->
+    <!-- Materialze-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Materialize icons-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="nav-wrapper" style="background-color: #accce6">
+          <a href="#" class="brand-logo center" ; style="height: 100%">
+            <img
+              src="assets/Iceberg_7292.jpg"
+              alt="Iceberg and Kayaking"
+              class="circle responsive-img"
+              style="height: 100%; padding-top: 5px; padding-left: 15px"
+            />
+            <!-- love  the "circle" class -->
+          </a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down"></ul>
+          <!-- <nav> -->
+            <div class="nav-wrapper">
+              <a href="#" class="brand-logo center"></a>
+              <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li>
+                  <a href="#" data-target="slide-out" class="slidenav-trigger" style="display:block" ><i class="material-icons">menu</i></a>
+                </li>
+                <li>
+                  <a href="assets/AntarcticaCalculatorRestfulAPI_1.html"
+                    >Home</a>
+                </li>
+                <li><a href="index.html">Project Pitch</a></li>
+              </ul>
+            </div>
+          <!-- </nav> -->
+        </div>
+      </nav>
+
+      <ul id="slide-out" class="sidenav">
+          <li><a>Projects</a></li>
+          <li><a>Settings</a></li>
+      </ul>
+    </header>
+    <main>
+      <div class="container">
+        <p class="title">
+          Using Alex NExUs Boilerplate design - logging adventure in Antarctica!
+        </p>
+        <div class="row">
+            <h3 class="title">Pick a date and log your adventure</h3>
+          </div>
+  
+  
+          <div class="row">
+            <div class="col-sm-3">
+              <input type="text" class="datepicker" name="" id="" />
+            </div>
+            <div class="col-sm-9">
+            </div>
+          </div>
+  
+        <div id="projects-list" class="row"></div>
+        <div class="row test-div">
+            <!-- <div class="col s6 m4 l4 xl1">1</div>
+            <div class="col s6 m4 l4 xl1">1</div>
+            <div class="col s6 m4 l4 xl1">1</div>
+            <div class="col s6 m4 l4 xl1">1</div>
+            <div class="col s6 m4 l4 xl1">1</div>
+            <div class="col s6 m4 l4 xl1">1</div>
+            
+            <div class="col s6 m4 l4 xl1">1</div>
+            <div class="col s6 m4 l4 xl1">1</div>
+            <div class="col s6 m4 l4 xl1">1</div>
+            <div class="col s6 m4 l4 xl1">1</div>
+            <div class="col s6 m4 l4 xl1">1</div>
+            <div class="col s6 m4 l4 xl1">1</div> -->
+          </div>
+
+        <a
+          class="btn-floating btn-large waves-effect waves-light red"
+          style="position: fixed; right: 10px; bottom: 10px"><i class="material-icons">add</i></a>
+        
+      <!-- </div> -->
+    </main>
+    <footer class="page-footer">
+      <div class="footer-copyright">
+        <div class="container"></div>
+      </div>
+    </footer>
+
+    <!-- Initialising calendar picker; can be done using jQuery - might be moved later -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".datepicker");
+        var instances = M.Datepicker.init(elems);
+      });
+    </script>
+
+    <!-- socket IO Served by the server -->
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="env.js"></script>
+  </body>
+</html>
