@@ -31,6 +31,7 @@ Index.html was modified visually to suit presentation of Antarctica views, but r
 In styles .test-div div style was added for presentation of 20 projects in table
 
 - Upload to gitHub was very chaotic, as I was unsure how to add a folder, I may need to re-do the upload.
+- Added wireframe design file Wireframe for Antarctica website project SIT725 Prac 3.pdf
 
 Kind Regards,
 Julia

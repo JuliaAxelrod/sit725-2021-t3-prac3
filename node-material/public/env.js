@@ -23,6 +23,7 @@ $(document).ready(function(){
   // $.get('/test?user_name="Fantastic User"',(result)=>{
   //   console.log(result)
   
+  // Add function to output allprojects on cards - for HTML 
     function projectCard(project){
       return `
     <div class="col s6 m4">
@@ -42,7 +43,7 @@ $(document).ready(function(){
 }
  
 
-  // test get call
+  // append all projects to project list
   $.get('/projects', (result) => {
     for (let p of result) {
 
